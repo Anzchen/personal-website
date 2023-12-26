@@ -9,6 +9,11 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "sass": "^1.69.5",
     "vite": "^5.0.8"
+  },
+  "dependencies": {
+    "gsap": "^3.12.4",
+    "imagesloaded": "^5.0.0"
   }
 }

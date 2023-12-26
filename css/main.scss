@@ -1,0 +1,123 @@
+:root {
+    --color-black: #181818;
+    --color-beige-0: #ECE3CE;
+    --color-beige-1: #8d8079;
+    --color-green-0: #739072;
+    --color-green-1: #4F6F52;
+    --color-green-2: #3A4D39;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Poppins';
+    background: var(--color-beige-0);
+}
+
+.loader {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    .blinder-container {
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+
+        .blinder {
+            background: var(--color-beige-1);
+            height: 100vh;
+            flex: 1;
+            transform-origin: top;
+        }
+    }
+    svg {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 7vw;
+    }
+}
+
+.sec {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+}
+
+button {
+    font-size: inherit;
+    background-color: inherit;
+    border: none;
+    color: var(--color-black);
+    font-weight: inherit;
+    font-family: inherit;
+    letter-spacing: inherit;
+    cursor: pointer;
+}
+
+/* Home */
+.home {
+    h2 {
+        justify-content: left;
+        align-items: center;
+        position: absolute;
+        white-space: nowrap;
+        font-size: 7.5vw;
+        z-index: 9;
+    }
+}
+
+/* About */
+.about {
+    position: relative;
+    h2 {
+        font-size: 3.5em;
+    }
+    p {
+        font-size: 1.2em;
+    }
+}
+
+/* Contact */
+footer {
+    margin-top: 200px;
+    border-top: 1px solid var(--color-black);
+    padding: 30px;
+    height: 350px;
+    box-sizing: border-box;
+    position: relative;
+    .ft_info {
+        font-size: 24px;
+        line-height: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .ft_career {
+        width: 30%;
+    }
+    .copyright, .ft_socials {
+        position: absolute;
+        bottom: 30px;
+        font-size: 18px;
+    }
+    .ft_socials {
+        right: 40px;
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    ul li {
+        list-style: none;
+        margin-left: 20px;
+    }
+}

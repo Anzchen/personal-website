@@ -1,24 +1,15 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import {gsap} from "gsap"
+import imagesLoaded from "imagesloaded"
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+var loader = document.getElementById("logo-container");
+const content = document.querySelector("section")
 
-setupCounter(document.querySelector('#counter'))
+// get all images
+const imgLoad = imagesLoaded(content)
+
+imgLoad.on('done', instance => {
+  // hide icon
+  var timeline = gsap.timeline()
+  timeline.to('svg', {opacity: 0})
+  timeline.to('.blinder', {scaleY: 0, ease: "slow"})
+})
