@@ -4,30 +4,76 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>anthonyzchen Portfolio</title>
     <link rel="stylesheet" href="css/main.scss">
   </head>
-  <body>
-    
+
+    <!-- Add a scroller/bouncing words to say 'SEEKING SUMMER AND FALL 2024 INTERNSHIPS' inspired from 'https://www.richbrown.info/'-->
+    <!-- <nav id="scroller" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, -4.1078%); visibility: visible;">
+      <div class="marquee-container">
+        <div class="marquee-wrap">
+          <div class="marquee-outer">
+  
+            <div class="marquee">
+              <div class="marquee__content">
+                                <span class="item">OPEN TO NEW PARTNERSHIPS AND COLLABORATIONS FOR 2024</span>
+                                <span class="item">OPEN TO NEW PARTNERSHIPS AND COLLABORATIONS FOR 2024</span>
+                                <span class="item">OPEN TO NEW PARTNERSHIPS AND COLLABORATIONS FOR 2024</span>
+                                <span class="item">OPEN TO NEW PARTNERSHIPS AND COLLABORATIONS FOR 2024</span>
+                                <span class="item">OPEN TO NEW PARTNERSHIPS AND COLLABORATIONS FOR 2024</span>
+                                <span class="item">OPEN TO NEW PARTNERSHIPS AND COLLABORATIONS FOR 2024</span>
+                                <span class="item">OPEN TO NEW PARTNERSHIPS AND COLLABORATIONS FOR 2024</span>
+                                <span class="item">OPEN TO NEW PARTNERSHIPS AND COLLABORATIONS FOR 2024</span>
+                                <span class="item">OPEN TO NEW PARTNERSHIPS AND COLLABORATIONS FOR 2024</span>
+                                <span class="item">OPEN TO NEW PARTNERSHIPS AND COLLABORATIONS FOR 2024</span>
+                            </div>
+              <div class="marquee__content" aria-hidden="true">
+                                <span class="item">OPEN TO NEW PARTNERSHIPS AND COLLABORATIONS FOR 2024</span>
+                                <span class="item">OPEN TO NEW PARTNERSHIPS AND COLLABORATIONS FOR 2024</span>
+                                <span class="item">OPEN TO NEW PARTNERSHIPS AND COLLABORATIONS FOR 2024</span>
+                                <span class="item">OPEN TO NEW PARTNERSHIPS AND COLLABORATIONS FOR 2024</span>
+                                <span class="item">OPEN TO NEW PARTNERSHIPS AND COLLABORATIONS FOR 2024</span>
+                                <span class="item">OPEN TO NEW PARTNERSHIPS AND COLLABORATIONS FOR 2024</span>
+                                <span class="item">OPEN TO NEW PARTNERSHIPS AND COLLABORATIONS FOR 2024</span>
+                                <span class="item">OPEN TO NEW PARTNERSHIPS AND COLLABORATIONS FOR 2024</span>
+                                <span class="item">OPEN TO NEW PARTNERSHIPS AND COLLABORATIONS FOR 2024</span>
+                                <span class="item">OPEN TO NEW PARTNERSHIPS AND COLLABORATIONS FOR 2024</span>
+                            </div>
+            </div>
+  
+          </div>
+        </div>
+  
+  
+      </div>
+    </nav> -->
+
+    <!-- Add button on top left to return to beginning screen -->
+
+  <body class="no-scroll">
     <div class="loader">
       <div class="blinder-container">
         <div class="blinder"></div>
-        <!-- <div class="blinder"></div>
         <div class="blinder"></div>
-        <div class="blinder"></div> -->
+        <div class="blinder"></div>
+        <div class="blinder"></div>
+        <div class="blinder"></div>
+        <div class="blinder"></div>
       </div>
 
       <svg viewBox="0 0 105 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M11.104 4.54H31.948V6.916H11.104V4.54ZM20.068 0.795998H22.696V33.88H20.068V0.795998ZM23.812 20.812C25.684 24.52 29.32 28.192 32.884 29.92C32.308 30.424 31.48 31.396 31.084 32.044C27.448 29.92 23.812 25.708 21.868 21.46L23.812 20.812ZM14.992 16.996V20.2H27.916V16.996H14.992ZM14.992 11.884V15.052H27.916V11.884H14.992ZM12.58 9.868H30.436V22.252H12.58V9.868ZM18.844 20.848L21.004 21.604C18.772 25.96 14.668 30.1 10.744 32.224C10.348 31.576 9.52 30.64 8.908 30.1C12.76 28.336 16.792 24.592 18.844 20.848ZM0.88 2.344H9.376V4.792H3.328V33.916H0.88V2.344ZM8.548 2.344H9.016L9.448 2.236L11.176 3.28C10.132 6.232 8.8 9.94 7.576 12.82C10.24 15.808 10.816 18.328 10.816 20.56C10.816 22.504 10.42 24.016 9.412 24.736C8.908 25.06 8.26 25.276 7.54 25.384C6.82 25.456 5.92 25.456 5.092 25.42C5.056 24.772 4.84 23.728 4.444 23.044C5.272 23.116 5.956 23.152 6.532 23.08C6.964 23.08 7.36 22.972 7.648 22.756C8.224 22.36 8.404 21.388 8.404 20.308C8.404 18.364 7.756 15.916 5.164 13.108C6.46 9.832 7.792 5.548 8.548 3.064V2.344ZM54.376 1.228H57.112V28.768C57.112 30.496 57.328 30.856 58.912 30.856C59.632 30.856 63.52 30.856 64.456 30.856C65.752 30.856 65.932 29.956 66.148 26.5C66.796 27.004 67.84 27.436 68.632 27.652C68.272 31.936 67.516 33.448 64.6 33.448C63.844 33.448 59.308 33.448 58.588 33.448C55.348 33.448 54.376 32.476 54.376 28.732V1.228ZM35.656 21.568C38.5 20.488 43.036 18.508 47.32 16.6L47.86 18.904C44.116 20.812 40.048 22.756 36.916 24.232L35.656 21.568ZM46.384 1.228H49.048V15.052C49.048 22.792 47.752 29.812 37.564 34.096C37.276 33.448 36.484 32.404 35.944 31.864C45.232 27.976 46.384 21.82 46.384 15.052V1.228ZM36.988 5.296L39.22 4.108C41.38 6.7 43.828 10.264 44.8 12.64L42.388 14.008C41.416 11.668 39.148 7.96 36.988 5.296ZM56.212 17.536L57.832 15.592C61.468 17.464 66.112 20.38 68.38 22.468L66.652 24.664C64.456 22.576 59.884 19.516 56.212 17.536ZM64.24 3.712L66.904 5.08C64.996 8.068 62.548 11.632 60.568 13.9L58.48 12.748C60.388 10.408 62.872 6.52 64.24 3.712ZM83.104 3.496H101.032V9.976H98.44V5.656H83.104V3.496ZM85.984 14.836V18.22H99.16V14.836H85.984ZM83.464 12.784H101.86V20.236H83.464V12.784ZM80.44 8.788H104.668V11.02H80.44V8.788ZM89.836 0.759999L92.536 1.048C91.888 4.108 90.988 7.924 90.304 10.3L87.568 10.264C88.324 7.78 89.224 3.784 89.836 0.759999ZM81.736 22.432H103.804V24.52H81.736V22.432ZM80.584 27.832H104.56V29.992H80.584V27.832ZM84.904 22.936H87.496V28.444H84.904V22.936ZM93.22 19.012H95.848V33.88H93.22V19.012ZM79.684 0.868L82.204 1.66C79.792 7.672 76.012 13.684 72.124 17.608C71.836 16.996 71.08 15.592 70.576 14.944C74.212 11.56 77.632 6.268 79.684 0.868ZM75.796 10.192L78.316 7.636L78.388 7.672V33.844H75.796V10.192Z" fill="#3A4D39"/>
+        <path d="M11.104 4.54H31.948V6.916H11.104V4.54ZM20.068 0.795998H22.696V33.88H20.068V0.795998ZM23.812 20.812C25.684 24.52 29.32 28.192 32.884 29.92C32.308 30.424 31.48 31.396 31.084 32.044C27.448 29.92 23.812 25.708 21.868 21.46L23.812 20.812ZM14.992 16.996V20.2H27.916V16.996H14.992ZM14.992 11.884V15.052H27.916V11.884H14.992ZM12.58 9.868H30.436V22.252H12.58V9.868ZM18.844 20.848L21.004 21.604C18.772 25.96 14.668 30.1 10.744 32.224C10.348 31.576 9.52 30.64 8.908 30.1C12.76 28.336 16.792 24.592 18.844 20.848ZM0.88 2.344H9.376V4.792H3.328V33.916H0.88V2.344ZM8.548 2.344H9.016L9.448 2.236L11.176 3.28C10.132 6.232 8.8 9.94 7.576 12.82C10.24 15.808 10.816 18.328 10.816 20.56C10.816 22.504 10.42 24.016 9.412 24.736C8.908 25.06 8.26 25.276 7.54 25.384C6.82 25.456 5.92 25.456 5.092 25.42C5.056 24.772 4.84 23.728 4.444 23.044C5.272 23.116 5.956 23.152 6.532 23.08C6.964 23.08 7.36 22.972 7.648 22.756C8.224 22.36 8.404 21.388 8.404 20.308C8.404 18.364 7.756 15.916 5.164 13.108C6.46 9.832 7.792 5.548 8.548 3.064V2.344ZM54.376 1.228H57.112V28.768C57.112 30.496 57.328 30.856 58.912 30.856C59.632 30.856 63.52 30.856 64.456 30.856C65.752 30.856 65.932 29.956 66.148 26.5C66.796 27.004 67.84 27.436 68.632 27.652C68.272 31.936 67.516 33.448 64.6 33.448C63.844 33.448 59.308 33.448 58.588 33.448C55.348 33.448 54.376 32.476 54.376 28.732V1.228ZM35.656 21.568C38.5 20.488 43.036 18.508 47.32 16.6L47.86 18.904C44.116 20.812 40.048 22.756 36.916 24.232L35.656 21.568ZM46.384 1.228H49.048V15.052C49.048 22.792 47.752 29.812 37.564 34.096C37.276 33.448 36.484 32.404 35.944 31.864C45.232 27.976 46.384 21.82 46.384 15.052V1.228ZM36.988 5.296L39.22 4.108C41.38 6.7 43.828 10.264 44.8 12.64L42.388 14.008C41.416 11.668 39.148 7.96 36.988 5.296ZM56.212 17.536L57.832 15.592C61.468 17.464 66.112 20.38 68.38 22.468L66.652 24.664C64.456 22.576 59.884 19.516 56.212 17.536ZM64.24 3.712L66.904 5.08C64.996 8.068 62.548 11.632 60.568 13.9L58.48 12.748C60.388 10.408 62.872 6.52 64.24 3.712ZM83.104 3.496H101.032V9.976H98.44V5.656H83.104V3.496ZM85.984 14.836V18.22H99.16V14.836H85.984ZM83.464 12.784H101.86V20.236H83.464V12.784ZM80.44 8.788H104.668V11.02H80.44V8.788ZM89.836 0.759999L92.536 1.048C91.888 4.108 90.988 7.924 90.304 10.3L87.568 10.264C88.324 7.78 89.224 3.784 89.836 0.759999ZM81.736 22.432H103.804V24.52H81.736V22.432ZM80.584 27.832H104.56V29.992H80.584V27.832ZM84.904 22.936H87.496V28.444H84.904V22.936ZM93.22 19.012H95.848V33.88H93.22V19.012ZM79.684 0.868L82.204 1.66C79.792 7.672 76.012 13.684 72.124 17.608C71.836 16.996 71.08 15.592 70.576 14.944C74.212 11.56 77.632 6.268 79.684 0.868ZM75.796 10.192L78.316 7.636L78.388 7.672V33.844H75.796V10.192Z" fill="black"/>
       </svg>
+        
          
     </div>
 
-    <section>
+    <section class="all-content">
       <div class="mask">
         <div class="sec home">
           <h1>hi, i'm ant.</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, asperiores possimus! Velit placeat dignissimos itaque architecto non atque dolore sed.</p>
+          <p>With over two decades of experience as a UX/UI freelance designer and art director, I have had the privilege of partnering with some of the worlds most renowned digital agencies and worked with exceptional brands including Zalando, Ivy Park, MTV, BT, Blistex, Schwarzkopf and Netflix. My passion revolves around crafting human-centric website and app designs that transcend aesthetics, focusing on problem-solving at the core of product design. I bring a unique blend of digital best practices, user-centric principles and cutting-edge technologies to every project.</p>
+          <p>I'm always excited to embrace innovative new projects that challenge assumptions and push the limits of digital experiences. Whether as an independent UX/UI freelancer or collaborating with creative agencies, I am dedicated to delivering thoughtful solutions that captivate and inspire. My work has been recognised by industry peers, with over 70 awards to date. I have also served on the jury for Awwwards since 2018 to help promote exceptional user experience and user interface design in the digital landscape.</p>
         </div>
 
         <div class="sec about">
@@ -40,16 +86,81 @@
           </p>
         </div>
 
-        <div class="sec portfolio">
-          
+        <div class="outer">
+          <div class="slider">
+            <section>
+              <div class="inner">
+                <img src="pics/pfp1.jpg" alt="Project1">
+                <div class="content">
+                  <h1>Project1</h1>
+                  <p>
+                    Date <br>
+                    Disciplines <br>
+                    For what organization
+                  </p>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="inner">
+                <img src="pics/pfp2.jpg" alt="Project2">
+                <div class="content">
+                  <h1>Project2</h1>
+                  <p>
+                    Date <br>
+                    Disciplines <br>
+                    For what organization
+                  </p>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="inner">
+                <img src="pics/pfp3.jpg" alt="Project3">
+                <div class="content">
+                  <h1>Project3</h1>
+                  <p>
+                    Date <br>
+                    Disciplines <br>
+                    For what organization
+                  </p>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="inner">
+                <img src="pics/pfp4.jpg" alt="Project4">
+                <div class="content">
+                  <h1>Project4</h1>
+                  <p>
+                    Date <br>
+                    Disciplines <br>
+                    For what organization
+                  </p>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="inner">
+                <img src="pics/pfp5.jpg" alt="Project5">
+                <div class="content">
+                  <h1>Project4</h1>
+                  <p>
+                    Date <br>
+                    Disciplines <br>
+                    For what organization
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
 
         <footer>
           <div class="ft_info">
               <p class="ft_career"> 
-              Seeking Summer & Fall 2024 Internships,<br>
-              Front-end Software Engineer,<br>
-              Web Development<br>
+              Front-end Software Engineering,<br>
+              Web Development, UXUI<br>
               </p>
               <p class="ft_contact">
               anthonyzchen@yahoo.com<br> 
@@ -60,7 +171,7 @@
               New York, United States
               </p>
           </div>
-          <div class="copyright">@anthonyzchen</div>
+          <div class="copyright"><span>©</span>anthonyzchen</div>
           <div class="ft_socials">
               <ul>
                   <li><a href="https://www.facebook.com/anthonyzchen.03" target="_blank"><button>facebook</button></a></li>
@@ -74,9 +185,83 @@
 
       </div>
     </section>
-    
-    <img src="pics/pfp1.jpg" style="display: none;" alt="pic">
 
     <script type="module" src="/main.js"></script>
   </body>
+
+  <!-- <body>
+    <div class="test"></div>
+    <div class="outer">
+      <div class="slider">
+        <section>
+          <div class="inner">
+            <img src="pics/pfp1.jpg" alt="Project1">
+            <div class="content">
+              <h1>Project1</h1>
+              <p>
+                Date <br>
+                Disciplines <br>
+                For what organization
+              </p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="inner">
+            <img src="pics/pfp2.jpg" alt="Project2">
+            <div class="content">
+              <h1>Project2</h1>
+              <p>
+                Date <br>
+                Disciplines <br>
+                For what organization
+              </p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="inner">
+            <img src="pics/pfp3.jpg" alt="Project3">
+            <div class="content">
+              <h1>Project3</h1>
+              <p>
+                Date <br>
+                Disciplines <br>
+                For what organization
+              </p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="inner">
+            <img src="pics/pfp4.jpg" alt="Project4">
+            <div class="content">
+              <h1>Project4</h1>
+              <p>
+                Date <br>
+                Disciplines <br>
+                For what organization
+              </p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="inner">
+            <img src="pics/pfp5.jpg" alt="Project5">
+            <div class="content">
+              <h1>Project4</h1>
+              <p>
+                Date <br>
+                Disciplines <br>
+                For what organization
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="test"></div>
+
+    <script type="module" src="/main.js"></script>
+  </body> -->
 </html>
