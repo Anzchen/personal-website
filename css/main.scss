@@ -52,8 +52,8 @@
     --color-blue-0: #BBE1FA;
     --color-blue-1: #3282B8;
     --color-blue-2: #0F4C75;
-    --small-font: calc(12px + .390625vw)
-    // --color-primary:
+    --small-font: calc(12px + .390625vw);
+    --color-primary: var(--color-beige-0);
 }
 
 .no-scroll {
@@ -64,8 +64,8 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: .5rem;
-    padding-right: .5rem;
+    padding-left: .35rem;
+    padding-right: .35rem;
     border: 1px solid red;
 }
 
@@ -73,7 +73,7 @@ body {
     margin: 0;
     height: 100vh;
     font-family: 'Poppins';
-    background: var(--color-beige-0);
+    background: var(--color-primary);
     overscroll-behavior-y: none;
     .container {
         max-width: 90vw;
@@ -102,6 +102,7 @@ body {
 
         .blinder {
             background: var(--color-green-0);
+            border: 2px solid var(--color-green-0);
             flex: 1;
             transform-origin: top;
         }
@@ -117,13 +118,62 @@ body {
     }
 }
 
+/* Header */
+.header {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    .nav {
+        display: flex;
+        padding-top: 1rem;
+        justify-content: space-between;
+        .logo {
+            position: relative;
+            font-size: var(--small-font);
+            background-color: inherit;
+            border: none;
+            cursor: pointer;
+        }
+        .menu {
+            position: relative;
+            font-size: var(--small-font);
+            background-color: var(--color-beige-1);
+            border: none;
+            cursor: pointer;
+            :hover {
+                background-color: #4F6F52;
+            }
+        }
+        .menu-open {
+            position: absolute;
+            background-color: var(--color-beige-1);
+            min-width: 400px;
+        }
+    }
+}
+
 /* Home */
 .home {
     height: 100vh;
+    h1 {
+        position: absolute;
+        font-size: 10vw;
+        margin: 0;
+        bottom: 1vw;
+    }
+    p {
+        position: absolute;
+        text-align: center;
+
+        top: 4vw;
+        right: 10vw;
+        width: 33vw;
+    }
 }
 
 /* About */
 .about {
+    height: 100vh;
 }
 
 /* Portfolio */
@@ -140,6 +190,7 @@ body {
         align-items: center;
         padding-left: .5rem;
         padding-right: .5rem;
+        border: 1px solid red;
         .inner{
             margin: 7em;
             position: relative;
@@ -205,4 +256,16 @@ footer {
             font-size: var(--small-font);
         }
     }
+}
+
+.animate {
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: var(--color-blue-2);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, .2);
+    border-radius: 8px;
+    left: -400px
 }
