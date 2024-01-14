@@ -100,15 +100,19 @@ ScrollTrigger.create({
 
 // Making menu open and close
 var linkMenu = document.querySelector('.menu');
-var menu = document.querySelector(".menu-open");
 linkMenu.addEventListener('click', openMenu);
+var open = false;
 
 function openMenu() {
-  if (menu.style.display == "none") {
-    menu.style.display = "flex";
+  if (!open) {
+    open = true
+    gsap.to('.menu-open', {opacity: 1, delay: 1, duration: .5})
+    gsap.to('.menu', {color: "var(--color-black)", delay: .5, duration: .5})
   }
   else {
-    menu.style.display = "none"
+    open = false
+    gsap.to('.menu-open', {opacity: 0, delay: 1, duration: .5})
+    gsap.to('.menu', {color: "var(--color-white)", delay: .5, duration: .5})
   }
 }
 
@@ -119,6 +123,7 @@ linkLogo.addEventListener('click', refresh);
 function refresh() {
   location.reload()
 }
+
 
 
 

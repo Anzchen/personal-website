@@ -126,22 +126,16 @@ body {
     z-index: 99;
     width: 100%;
     .menu-open {
-        // position: absolute;
-        // top: 0;
-        // right: 0;
-        // background-color: var(--color-beige-1);
-        // border-radius: 5px;
-        // min-width: 400px;
-        display: none;
         position: absolute;
         background-color: var(--color-beige-1);
         min-width: 400px;
-        // display: flex;
+        display: flex;
         justify-content: end;
         right: 0;
         margin-right: 2.8rem;
         margin-top: 1rem;
         border-radius: 5px;
+        opacity: 0;
         ul {
             margin: 1rem;
             padding-top: 3rem;
