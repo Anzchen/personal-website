@@ -44,6 +44,7 @@
 /* utilities*/
 :root {
     --color-black: #181818;
+    --color-white: #FFFFFF;
     --color-beige-0: #ECE3CE;
     --color-beige-1: #8d8079;
     --color-green-0: #739072;
@@ -53,6 +54,7 @@
     --color-blue-1: #3282B8;
     --color-blue-2: #0F4C75;
     --small-font: calc(12px + .390625vw);
+    --big-font: calc(30px + .390625vw);
     --color-primary: var(--color-beige-0);
 }
 
@@ -123,31 +125,45 @@ body {
     position: fixed;
     z-index: 99;
     width: 100%;
+    .menu-open {
+        // position: absolute;
+        // top: 0;
+        // right: 0;
+        // background-color: var(--color-beige-1);
+        // border-radius: 5px;
+        // min-width: 400px;
+        display: none;
+        position: absolute;
+        background-color: var(--color-beige-1);
+        min-width: 400px;
+        // display: flex;
+        justify-content: end;
+        right: 0;
+        margin-right: 2.8rem;
+        margin-top: 1rem;
+        border-radius: 5px;
+        ul {
+            margin: 1rem;
+            padding-top: 3rem;
+        }
+    }
     .nav {
         display: flex;
         padding-top: 1rem;
         justify-content: space-between;
         .logo {
             position: relative;
-            font-size: var(--small-font);
+            font-size: var(--big-font);
             background-color: inherit;
             border: none;
             cursor: pointer;
         }
         .menu {
             position: relative;
-            font-size: var(--small-font);
-            background-color: var(--color-beige-1);
+            font-size: var(--big-font);
+            color: var(--color-white);
             border: none;
             cursor: pointer;
-            :hover {
-                background-color: #4F6F52;
-            }
-        }
-        .menu-open {
-            position: absolute;
-            background-color: var(--color-beige-1);
-            min-width: 400px;
         }
     }
 }

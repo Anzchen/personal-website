@@ -70,29 +70,44 @@ ScrollTrigger.create({
   markers: true
 })
 
-// Changing background color for each project
-const tween2 = gsap.to('.outer', {
-  backgroundColor: '#739072'
+// Changing background color for projects section
+const tl = gsap.timeline({});
+const tween2 = tl
+.to('.outer', {
+  backgroundColor: '#3A4D39'
+})
+.to('.outer', {
+  backgroundColor: '#0F4C75'
+})
+.to('.outer', {
+  backgroundColor: '#FF0000'
+})
+.to('.outer', {
+  backgroundColor: '#ECE3CE'
+})
+.to('.outer', {
+  backgroundColor: '#ECE3CE'
 })
 
 ScrollTrigger.create({
-  trigger: '.project2',
-  start: 'top center',
-  end: 'bottom center',
+  trigger: '.outer',
+  start: 'top',
+  end: () => `+=${getScrollAmt() * -1}`,
   scrub: 1,
   animation: tween2,
   markers: true 
 })
 
-// const tween3 = gsap.to('.outer', {
-//   backgroundColor: '#ECE3CE'
-// })
+// Making menu open and close
+var link = document.querySelector('.menu');
+var menu = document.querySelector(".menu-open");
+link.addEventListener('click', openMenu);
 
-// ScrollTrigger.create({
-//   trigger: '.project2',
-//   start: 'bottom center',
-//   end: '150% center',
-//   scrub: 1,
-//   animation: tween3,
-//   markers: true 
-// })
+function openMenu() {
+  if (menu.style.display == "none") {
+    menu.style.display = "flex";
+  }
+  else {
+    menu.style.display = "none"
+  }
+}
