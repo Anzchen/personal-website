@@ -99,9 +99,9 @@ ScrollTrigger.create({
 })
 
 // Making menu open and close
-var link = document.querySelector('.menu');
+var linkMenu = document.querySelector('.menu');
 var menu = document.querySelector(".menu-open");
-link.addEventListener('click', openMenu);
+linkMenu.addEventListener('click', openMenu);
 
 function openMenu() {
   if (menu.style.display == "none") {
@@ -111,3 +111,14 @@ function openMenu() {
     menu.style.display = "none"
   }
 }
+
+// Making logo cause page refresh
+var linkLogo = document.querySelector('.logo');
+linkLogo.addEventListener('click', refresh);
+
+function refresh() {
+  location.reload()
+}
+
+
+
