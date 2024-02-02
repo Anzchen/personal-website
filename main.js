@@ -72,15 +72,16 @@ ScrollTrigger.create({
 
 // Changing background color for projects section
 const tl = gsap.timeline({});
+
 const tween2 = tl
 .to('.outer', {
-  backgroundColor: '#3A4D39'
+  backgroundColor: '#3A506B'
 })
 .to('.outer', {
-  backgroundColor: '#0F4C75'
+  backgroundColor: '#BB7E5D'
 })
 .to('.outer', {
-  backgroundColor: '#FF0000'
+  backgroundColor: '#4F6F52'
 })
 .to('.outer', {
   backgroundColor: '#ECE3CE'
