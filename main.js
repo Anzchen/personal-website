@@ -124,7 +124,3 @@ linkLogo.addEventListener('click', refresh);
 function refresh() {
   location.reload()
 }
-
-
-
-
