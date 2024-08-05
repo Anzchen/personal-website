@@ -1,12 +1,7 @@
-// import { gsap } from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import imagesLoaded from 'imagesloaded'
-// import Lenis from '@studio-freight/lenis'
-
-import gsap from 'gsap/dist/gsap';
-import imagesLoaded from 'imagesloaded/imagesloaded';
-import Lenis from '@studio-freight/lenis';
-
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import imagesLoaded from 'imagesloaded'
+import Lenis from '@studio-freight/lenis'
 
 gsap.registerPlugin(ScrollTrigger) 
 
