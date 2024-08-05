@@ -1,7 +1,12 @@
-import {gsap} from 'gsap'
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import imagesLoaded from 'imagesloaded'
-import Lenis from '@studio-freight/lenis'
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import imagesLoaded from 'imagesloaded'
+// import Lenis from '@studio-freight/lenis'
+
+import gsap from 'gsap/dist/gsap';
+import imagesLoaded from 'imagesloaded/imagesloaded';
+import Lenis from '@studio-freight/lenis';
+
 
 gsap.registerPlugin(ScrollTrigger) 
 
@@ -27,7 +32,7 @@ imgLoad.on('done', instance => {
   })
   // Hide icon and begin timeline animations
   timeline
-  .to('svg', {opacity: 0, delay: 1, duration: .5})
+  .to('.loader-logo', {opacity: 0, delay: 1, duration: .5})
   .to('.blinder', {scaleY: 0, stagger: .3, ease: 'power3.out'})
 })
 
