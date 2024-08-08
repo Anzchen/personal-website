@@ -1,3 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Roslindale Display Condensed";
+  /* <script type="text/javascript">
+        WebFont.load({custom: { families: ["KoHo Medium", "KoHo Regular", "DFShouJinW3"] }});
+        </script> */
+  background: var(--color-primary);
+  overflow-x: hidden;
+}
+
 /* 320px - 768px */
 @media (max-width: 768px) {
   footer .ft_top {
@@ -65,26 +83,6 @@
   border: 1px solid red;
 }
 
-body {
-  margin: 0;
-  height: 100vh;
-  font-family: "Poppins";
-  /* <script type="text/javascript">
-        WebFont.load({custom: { families: ["KoHo Medium", "KoHo Regular", "DFShouJinW3"] }});
-        </script> */
-  background: var(--color-primary);
-  overscroll-behavior-y: none;
-}
-body .container {
-  max-width: 90vw;
-}
-body p {
-  font-size: calc(15px + 0.390625vw);
-}
-body h1 {
-  font-size: calc(17px + 0.390625vw);
-}
-
 /* preloader */
 .loader {
   height: 100vh;
@@ -117,6 +115,85 @@ body h1 {
 }
 
 /* Header */
+.containerTest {
+  width: 100%;
+  height: 1200vh;
+}
+.containerTest img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.containerTest a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.containerTest h1 {
+  width: 100%;
+  color: white;
+  font-size: 48vw;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+.containerTest nav {
+  position: fixed;
+  top: 0;
+  padding: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.containerTest .wrapper404 {
+  position: absolute;
+  top: 0;
+  width: 400vw;
+  height: 100vh;
+  will-change: transform;
+}
+.containerTest .card {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.containerTest #card-1 {
+  top: 50%;
+  left: 20%;
+}
+.containerTest #card-2 {
+  top: 25%;
+  left: 40%;
+}
+.containerTest #card-3 {
+  top: 45%;
+  left: 60%;
+}
+.containerTest #card-4 {
+  top: 15%;
+  left: 80%;
+}
+.containerTest .outro {
+  position: absolute;
+  top: 150vh;
+  width: 100%;
+  height: 100vh;
+}
+.containerTest .outro h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 40px;
+  font-weight: lighter;
+  text-align: center;
+}
+
 header {
   position: fixed;
   z-index: 99;
@@ -179,35 +256,6 @@ header .menu-toggle .hamburger path {
 }
 
 /* Portfolio */
-.space-50vh {
-  height: 50vh;
-}
-
-.space-100vh {
-  height: 100vh;
-}
-
-.lightBG {
-  background-color: var(--color-beige-1);
-}
-
-.sliderWrapper {
-  overflow-x: hidden;
-}
-.sliderWrapper .slider {
-  display: flex;
-  width: 500vw;
-}
-.sliderWrapper h1 {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  border: 1px solid red;
-}
-
 /* Contact */
 footer {
   margin-top: 80vh;

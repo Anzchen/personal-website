@@ -1,3 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Roslindale Display Condensed";
+  // Font I want to use
+  /* <script type="text/javascript">
+        WebFont.load({custom: { families: ["KoHo Medium", "KoHo Regular", "DFShouJinW3"] }});
+        </script> */
+  background: var(--color-primary);
+  overflow-x: hidden;
+//   overflow-y: hidden;
+//   overscroll-behavior-y: none;
+//   .container {
+//     max-width: 90vw;
+//   }
+//   p {
+//     font-size: calc(15px + 0.390625vw);
+//   }
+//   h1 {
+//     font-size: calc(17px + 0.390625vw);
+//   }
+}
+
 /* 320px - 768px */
 @media (max-width: 768px) {
   footer {
@@ -72,27 +102,6 @@
   border: 1px solid red;
 }
 
-body {
-  margin: 0;
-  height: 100vh;
-  font-family: "Poppins";
-  // Font I want to use
-  /* <script type="text/javascript">
-        WebFont.load({custom: { families: ["KoHo Medium", "KoHo Regular", "DFShouJinW3"] }});
-        </script> */
-  background: var(--color-primary);
-  overscroll-behavior-y: none;
-  .container {
-    max-width: 90vw;
-  }
-  p {
-    font-size: calc(15px + 0.390625vw);
-  }
-  h1 {
-    font-size: calc(17px + 0.390625vw);
-  }
-}
-
 /* preloader */
 .loader {
   height: 100vh;
@@ -126,6 +135,83 @@ body {
 }
 
 /* Header */
+.containerTest {
+  width: 100%;
+  height: 1200vh;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+  }
+  h1 {
+    width: 100%;
+    color: white;
+    font-size: 48vw;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    padding: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .wrapper404 {
+    position: absolute;
+    top: 0;
+    width: 400vw;
+    height: 100vh;
+
+    will-change: transform;
+  }
+  .card {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  #card-1 {
+    top: 50%;
+    left: 20%;
+  }
+  #card-2 {
+    top: 25%;
+    left: 40%;
+  }
+  #card-3 {
+    top: 45%;
+    left: 60%;
+  }
+  #card-4 {
+    top: 15%;
+    left: 80%;
+  }
+  .outro {
+    position: absolute;
+    top: 150vh;
+    width: 100%;
+    height: 100vh;
+  }
+  .outro h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    font-size: 40px;
+    font-weight: lighter;
+    text-align: center;
+  }
+}
 // .header {
 //     position: fixed;
 //     z-index: 99;
@@ -229,65 +315,48 @@ header {
 }
 
 /* Portfolio */
-.space-50vh{
-    height: 50vh;
-}
-.space-100vh{
-    height: 100vh;
-}
-.lightBG {
-    background-color: var(--color-beige-1);
-}
-.sliderWrapper {
-  overflow-x: hidden;
-  .slider {
-    display: flex;
-    width: 500vw;
-  }
-  h1 {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    border: 1px solid red;
-  }
-  //   section {
-  //     height: 100vh;
-  //     width: 100vw;
-  //     display: flex;
-  //     align-items: center;
-  //     padding-left: 0.5rem;
-  //     padding-right: 0.5rem;
-  //     border: 1px solid red;
-  //     .inner {
-  //       margin: 7em;
-  //       position: relative;
-  //       justify-content: center;
-  //       align-items: center;
-  //       display: flex;
-  //       height: 80vh;
-  //       margin-left: auto;
-  //       margin-right: auto;
-  //       border: 1px solid red;
-  //       img {
-  //         padding-right: 1vw;
-  //         max-width: 70%;
-  //         max-height: 70%;
-  //       }
-  //       .content {
-  //         h1 {
-  //           text-transform: uppercase;
-  //         }
-  //         p {
-  //           line-height: 1.5em;
-  //           font-weight: 300;
-  //         }
-  //       }
-  //     }
-  //   }
-}
+
+// .sliderWrapper {
+//   overflow-x: hidden;
+//   .slider {
+//     display: flex;
+//     width: 500vw;
+//   }
+//     section {
+//       height: 100vh;
+//       width: 100vw;
+//       display: flex;
+//       align-items: center;
+//       padding-left: 0.5rem;
+//       padding-right: 0.5rem;
+//       border: 1px solid red;
+//       .inner {
+//         margin: 7em;
+//         position: relative;
+//         justify-content: center;
+//         align-items: center;
+//         display: flex;
+//         height: 80vh;
+//         margin-left: auto;
+//         margin-right: auto;
+//         border: 1px solid red;
+//         img {
+//           padding-right: 1vw;
+//           max-width: 70%;
+//           max-height: 70%;
+//         }
+//         .content {
+//           h1 {
+//             text-transform: uppercase;
+//           }
+//           p {
+//             line-height: 1.5em;
+//             font-weight: 300;
+//           }
+//         }
+//       }
+//     }
+// }
 
 /* Contact */
 footer {
